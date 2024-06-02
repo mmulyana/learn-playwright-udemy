@@ -37,6 +37,10 @@ test('first test', () {
 - `use` what browser you want use, get screenshot, logs, etc
   - `browserName` choose the browser you want to use for the test, e.g., WebKit/Safari or Chromium.
   - `headless` by default is false, if true test will running without open browser only in terminal
+  - 'screenshot' Take a picture of the pageTake a picture of the page 
+  - 'trace' records the entire testing session with all interaction details.
+    - 'on' will generate every test
+    - 'retain-on-failure' will generate only if test fail
 
 ### how to run single test only
 
@@ -60,13 +64,4 @@ locator ini digunakan untuk menemukan element, kenapa? contohnya ketika ingin me
 ### how to type in textfield
 
 use `fill` for latest version cause `type` is deprecated
-
-### How to handle redirect case 
-
-use `waitFor` 
-
-```javascript
-await page.locator('h1.title').waitFor()
-```
-test runner will wait until h1 with class title is defined
 
