@@ -65,3 +65,21 @@ locator ini digunakan untuk menemukan element, kenapa? contohnya ketika ingin me
 
 use `fill` for latest version cause `type` is deprecated
 
+### another locator
+
+1. `getByLabel()`
+
+```javascript
+await page.getByLabel("label").click()
+```
+
+2. `getByRole()`
+
+```javascript
+```
+
+3. `getByText()`
+
+### API integration
+
+in playwright theres `request` to call api in test 
