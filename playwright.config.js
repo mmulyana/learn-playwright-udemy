@@ -38,7 +38,13 @@ module.exports = defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: {
+          width: 800,
+          height: 1400,
+        },
+      },
     },
 
     // {
@@ -48,7 +54,7 @@ module.exports = defineConfig({
 
     // {
     //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
+    //   use: { ...devices['iPhone 11 Pro Max'] },
     // },
 
     /* Test against mobile viewports. */

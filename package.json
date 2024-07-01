@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test",
+    "test:new-config": "npx playwright test --config playwright-new.config.js --project=safari"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@playwright/test": "^1.44.1",
     "@types/node": "^20.12.13"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^10.8.0",
+    "exceljs": "^4.4.0"
   }
 }
